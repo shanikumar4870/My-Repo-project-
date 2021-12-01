@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<img src="sk.jpg" height="500px" id = "img1"/>
+<img src ="walpaper2.jpg" height="500px "id ="img2"/>
+<button  onclick="demo()">print image path</button>
+<script>
+
+function demo()
+{
+var im1= document.getElementById("img1")
+var im2 = document.getElementById("img2")
+var path1 =im1.src;
+var path2 =im2.src;
+im2.src =path1;
+im1.src = path2;
+
+}
+window.setInterval(demo,2000)
+</script>
+</body>
+</html>
